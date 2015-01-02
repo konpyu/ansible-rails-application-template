@@ -1,0 +1,4 @@
+- name: copy ruby_version
+  copy:
+    src: .ruby_version
+    dest: "{{ apppath }}/.ruby_version"

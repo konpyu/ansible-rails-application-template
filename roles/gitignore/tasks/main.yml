@@ -1,0 +1,4 @@
+- name: copy gitignore
+  copy:
+    src: .gitignore
+    dest: "{{ apppath }}/.gitignore"

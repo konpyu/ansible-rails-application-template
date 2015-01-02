@@ -1,0 +1,4 @@
+- name: copy Gemfile
+  copy:
+    src: Gemfile
+    dest: "{{ apppath }}/Gemfile"

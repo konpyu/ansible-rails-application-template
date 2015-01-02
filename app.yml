@@ -1,0 +1,17 @@
+- hosts: localhost
+  vars:
+    apppath: ~/ansible-application-template/Hoge
+    appname: Hoge
+    database: mysql
+    ruby_version: 2.1.5
+    facebook_id: hoge
+    facebook_secret: hoge
+  roles:
+    - new
+    - gitignore
+    - gem
+    - ruby_version
+#    - db
+#    - device
+#    - rspec
+#    - commit
