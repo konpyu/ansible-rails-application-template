@@ -1,0 +1,2 @@
+- name: execute bundle install
+  shell: cd ./{{ appname }} && bundle install --path=vendor/bundle

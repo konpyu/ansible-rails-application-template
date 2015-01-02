@@ -1,0 +1,2 @@
+- name: initial commit
+  shell: cd ./{{ appname }} && git init && git add . && git commit -m "first commit"

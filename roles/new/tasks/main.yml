@@ -4,7 +4,8 @@
 
 - name: do nothing when folder already exists
   debug: msg="app already exists"
-  failed_when: p.stat.isdir is defined and p.stat.isdir
+  when: p.stat.isdir is defined and p.stat.isdir
 
 - name: make new app
-  shell: rails new {{ appname }} --skip-bundle -d {{ database }}
+  shell: rails new {{ appname }} --skip-bundle -d {{ database }} -T
+  when: p.stat.isdir is not defined
